@@ -11,4 +11,3 @@ logstash_log4j_port: 4560
 
 # Elasticsearch
 logstash_output_elasticsearch: true
-elasticsearch_hostname: elasticsearch.service.consul

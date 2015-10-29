@@ -42,7 +42,7 @@ filter {
 output {
 {% if logstash_output_elasticsearch is defined %}
   elasticsearch {
-    hosts => ["{{ elasticsearch_hostname }}"]
+    hosts => ["elasticsearch.service.{{ consul_dns_domain }}"]
     index => "logstash"
   }
 {% endif %}
